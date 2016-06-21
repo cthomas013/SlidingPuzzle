@@ -1,0 +1,81 @@
+package edu.wm.cs.cs301.slidingpuzzle;
+
+import java.util.ArrayList;
+
+public class SimplePuzzleState implements PuzzleState {
+	
+	// set up the fields for the sliding puzzle
+	private int board[][];
+	private SimplePuzzleState parent;
+	private int pathLength;
+	private Operation op;
+	
+	public SimplePuzzleState() {
+		
+		this.board = null;
+		this.parent = null;
+		this.pathLength = 0;
+		this.op = null;
+	}
+	
+	/** 
+	 * this method will set up the start if the puzzle's board
+	 * use the dimension and the number of empty slots given by the user to set the board up
+	 * to his or her liking
+	 **/
+	@Override
+	public void setToInitialState(int dimension, int numberOfEmptySlots) {
+		
+	}
+
+	@Override
+	public int getValue(int row, int column) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public PuzzleState getParent() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Operation getOperation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getPathLength() {
+		
+		// return the path length for the sliding puzzle game
+		return this.pathLength;
+		
+	}
+
+	@Override
+	public PuzzleState move(int row, int column, Operation op) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PuzzleState flip(int startRow, int startColumn, int endRow, int endColumn) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PuzzleState shuffleBoard(int pathLength) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isEmpty(int row, int column) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
